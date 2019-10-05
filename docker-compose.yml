@@ -1,0 +1,19 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: btredb
+      PGDATA: /tmp
+    ports: 
+      - 5432:5432
+    volumes: 
+      - ./postgre_data:/var/lib/postgresql/data
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
