@@ -1,6 +1,8 @@
 env
 btre_resources
 /media
+/postgre_data
+.idea
 
 # Created by https://www.gitignore.io/api/python,django
 # Edit at https://www.gitignore.io/?templates=python,django
